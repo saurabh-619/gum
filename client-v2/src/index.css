@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --white: #fff;
+  --text: #000000;
+  --primary: #ffcd69;
+  --primary-dark: #fdce71;
+  --grey: #e0e0e0;
+  --btn-text: #797874;
+  --border: #cccccc;
+  --border-bt: #b9b9b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.project-wrapper {
+  padding: 1rem 2rem;
+}
+.project {
+  margin: 2rem 0;
+  /* background: var(--primary-dark); */
+  box-shadow: 0.1px 0.1px 10px 0px var(--primary-dark);
+  height: 100px;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.project h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: var(--btn-text);
+}
+/* Ratings */
+
+.total-rating-wrapper {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-rating-wrapper h2 {
+  font-weight: normal;
+  font-size: 44px;
+}
+
+.total-rating-wrapper .left {
+  display: flex;
+  align-items: center;
+}
+
+.total-stars {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 2rem;
+}
+
+.total-stars img {
+  margin-right: 0.5rem;
+}
+
+.total-rating-wrapper .add-review-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--white);
+  border: 2px solid var(--border);
+  color: var(--btn-text);
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.total-rating-wrapper .add-review-btn:hover,
+.submit-btn:hover {
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 10px 1px var(--primary);
+}
+
+.border-bt {
+  height: 1px;
+  width: 100%;
+  background-color: var(--border-bt);
+}
+
+.content {
+  margin: 3rem 0 2rem;
+}
+
+.content h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.review-wrapper .review {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+.review-wrapper .stars {
+  margin-right: 1.5rem;
+}
+.review-wrapper .rating-number {
+  margin-right: 0.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.review-wrapper .comment {
+  font-weight: normal;
+  color: var(--btn-text);
+}
+
+.review .stars {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.review .stars img {
+  margin-right: 0.5rem;
+  height: 25px;
+  width: 25px;
+}
+
+/* New Product */
+.modal-wrapper {
+  background: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-product {
+  height: 250px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+
+  /* position: absolute; */
+  z-index: 2;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+
+  padding: 2rem;
+  border-radius: 17px;
+}
+
+.new-product .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-product .header h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.new-product .header img {
+  cursor: pointer;
+}
+
+.new-product .input-text {
+  margin: 2rem 0;
+  width: 80%;
+  padding: 0.7rem 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.new-product .input-text:focus {
+  outline: 2px solid var(--primary);
+}
+
+.new-product .input-text:hover {
+}
+
+.submit-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--white);
+  border: 2px solid var(--border);
+  color: var(--btn-text);
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.add-new-product-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* Reviews */
+
+#ratings-modal .new-product {
+  height: 340px;
+  width: 500px;
+}
+
+#ratings-modal .new-product h4 {
+  margin: 1rem 0;
+  font-weight: normal;
+}
+
+#ratings-modal .new-product .input-text {
+  margin: 0 0 1.5rem;
+}
+
+#ratings-modal .new-product .stars {
+  display: flex;
+  align-items: center;
+}
+
+#ratings-modal .new-product .star img {
+  margin-right: 0.5rem;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
