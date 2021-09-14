@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --white: #fff;
+  --text: #000000;
+  --primary: #ffcd69;
+  --primary-dark: #fdce71;
+  --grey: #e0e0e0;
+  --btn-text: #797874;
+  --border: #cccccc;
+  --border-bt: #b9b9b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.project-wrapper {
+  padding: 1rem 2rem;
+}
+.project {
+  margin: 2rem 0;
+  /* background: var(--primary-dark); */
+  box-shadow: 0.1px 0.1px 10px 0px var(--primary-dark);
+  height: 100px;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.project h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: var(--btn-text);
+}
+
+/* Ratings */
+
+.total-rating-wrapper {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-rating-wrapper h2 {
+  font-weight: normal;
+  font-size: 44px;
+}
+
+.total-rating-wrapper .left {
+  display: flex;
+  align-items: center;
+}
+
+.total-stars {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 2rem;
+}
+
+.total-stars img {
+  margin-right: 0.5rem;
+}
+
+.total-rating-wrapper .add-review-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--white);
+  border: 2px solid var(--border);
+  color: var(--btn-text);
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.border-bt {
+  height: 1px;
+  width: 100%;
+  background-color: var(--border-bt);
+}
+
+.content {
+  margin: 3rem 0 2rem;
+}
+
+.content h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.review-wrapper .review {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+.review-wrapper .stars {
+  margin-right: 1.5rem;
+}
+.review-wrapper .rating-number {
+  margin-right: 0.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.review-wrapper .comment {
+  font-weight: normal;
+  color: var(--btn-text);
+}
+
+.review .stars {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.review .stars img {
+  margin-right: 0.5rem;
+  height: 25px;
+  width: 25px;
+}
