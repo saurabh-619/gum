@@ -29,7 +29,7 @@ const getAllProjects = async () => {
 };
 
 const onProjectClicked = (id) => {
-  window.location.href = "/review.html#" + id;
+  window.location.href = "/gum/review.html#" + id;
 };
 
 getAllProjects().then(({ getAllProducts }) => {
