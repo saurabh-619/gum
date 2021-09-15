@@ -1,4 +1,5 @@
-const API_ENDPOINT = "http://localhost:3000/graphql";
+// const API_ENDPOINT = "http://localhost:3000/graphql";
+const API_ENDPOINT = "https://gumroad-assignment.herokuapp.com/graphql";
 const projectsWrapper = document.querySelector(".projects-wrapper");
 
 const getAllProjects = async () => {

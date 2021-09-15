@@ -1,4 +1,5 @@
-const API_ENDPOINT = "http://localhost:3000/graphql";
+// const API_ENDPOINT = "http://localhost:3000/graphql";
+const API_ENDPOINT = "https://gumroad-assignment.herokuapp.com/graphql";
 
 const productId = window.location.hash.split("#")[1];
 const product = window.location.productData;
