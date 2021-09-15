@@ -13,11 +13,13 @@ import { WebSocketLink } from "@apollo/client/link/ws";
 import { getMainDefinition } from "@apollo/client/utilities";
 
 const httpLink = new HttpLink({
-  uri: "http://localhost:3000/graphql",
+  // uri: "http://localhost:3000/graphql",
+  uri: "https://gumroad-assignment.herokuapp.com/graphql",
 });
 
 const wsLink = new WebSocketLink({
-  uri: "ws://localhost:3000/graphql",
+  // uri: "ws://localhost:3000/graphql",
+  uri: "ws://gumroad-assignment.herokuapp.com/graphql",
   options: {
     reconnect: true,
   },

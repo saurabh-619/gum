@@ -15,9 +15,14 @@ import { Product } from './product/Product.entity';
     TypeOrmModule.forRoot({
       type: 'postgres',
       url: process.env.DATABASE_URL,
-      synchronize: __prod__ ? false : true,
-      logging: __prod__ ? false : true,
+      synchronize: true,
+      logging: true,
       entities: [Rating, Product],
+      ssl: !__prod__
+        ? false
+        : {
+            rejectUnauthorized: false,
+          },
     }),
     RatingModule,
     ProductModule,
