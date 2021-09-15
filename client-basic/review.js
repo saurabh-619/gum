@@ -93,14 +93,14 @@ getAllRatings().then(({ getAllRatingsOfAProduct: ratings }) => {
   Array.from({ length: Math.floor(avg) }).forEach((_, index) => {
     starWrapperEle.innerHTML += `
                   <div class="star">
-                    <img src="/assets/star.svg" alt="star" />
+                    <img src="/gum/assets/star.svg" alt="star" />
                   </div>`;
   });
 
   Array.from({ length: 5 - Math.floor(avg) }).forEach((_, index) => {
     starWrapperEle.innerHTML += `
                   <div class="star">
-                    <img src="/assets/star-dark.svg" alt="star" />
+                    <img src="/gum/assets/star-dark.svg" alt="star" />
                   </div>`;
   });
 
@@ -123,14 +123,14 @@ getAllRatings().then(({ getAllRatingsOfAProduct: ratings }) => {
     Array.from({ length: ratings[index].rating }).forEach((_, index) => {
       review.innerHTML += `
                   <div class="star">
-                    <img src="/assets/star.svg" alt="star" />
+                    <img src="/gum/assets/star.svg" alt="star" />
                   </div>`;
     });
 
     Array.from({ length: 5 - ratings[index].rating }).forEach((_, index) => {
       review.innerHTML += `
                   <div class="star">
-                    <img src="/assets/star-dark.svg" alt="star" />
+                    <img src="/gum/assets/star-dark.svg" alt="star" />
                   </div>`;
     });
   });
