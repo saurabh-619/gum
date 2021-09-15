@@ -64,7 +64,7 @@ const Home = () => {
   return (
     <section className="container">
       <header>
-        <h2>All Projects</h2>
+        <h2>All Products</h2>
       </header>
       <motion.div
         className="projects-wrapper"
