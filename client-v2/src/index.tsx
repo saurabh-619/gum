@@ -19,7 +19,7 @@ const httpLink = new HttpLink({
 
 const wsLink = new WebSocketLink({
   // uri: "ws://localhost:3000/graphql",
-  uri: "ws://gumroad-assignment.herokuapp.com/graphql",
+  uri: "wss://gumroad-assignment.herokuapp.com/graphql",
   options: {
     reconnect: true,
   },
